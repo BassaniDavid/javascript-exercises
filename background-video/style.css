@@ -1,0 +1,101 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 5rem;
+}
+
+.switch-btn {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+}
+
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: rgb(2, 139, 202);
+}
+
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(2, 139, 202);
+  border-radius: 10px;
+  margin: 0;
+  display: block;
+}
+
+.slide .switch {
+  left: 50%;
+}
+
+.preloader {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  visibility: visible;
+}
+
+.hide-preloader {
+  z-index: -10;
+  visibility: hidden;
+}
+
+.preloader img {
+  position: absolute;
+  width: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

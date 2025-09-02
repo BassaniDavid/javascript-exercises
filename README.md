@@ -18,13 +18,18 @@
 - ### modal:
 
   pagina in cui testare i modal di bootstrap
-  ![immagine review](./img/modal.png)
+  ![immagine modal](./img/modal.png)
 
 - ### dropdown:
 
   semplice test con 2 domande con un dropdown ciascuno per visualizzare la risposta. Quando si apre una risposta, l'altra si chiude automaticamente.
-  ![immagine review](./img/dropdown.png)
+  ![immagine dropdown](./img/dropdown.png)
 
 - ### menu filter:
+
   visualizzazione di un menu fittizio, con tasti per filtrare i risultati. il tasto selezionato rimane evidenziato.
-  ![immagine review](./img/filter.png)
+  ![immagine filter](./img/filter.png)
+
+- ### background filter:
+  pagina con un video in background che parte in automatico, con un filtro per scurirlo in modo da rendere ben visibile il titolo e con un tasto dinamico per mettere in pausa e far ripartire il video
+  ![immagine background-filter](./img/background-video.png)
