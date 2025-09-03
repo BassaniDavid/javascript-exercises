@@ -31,5 +31,10 @@
   ![immagine filter](./img/filter.png)
 
 - ### background filter:
+
   pagina con un video in background che parte in automatico, con un filtro per scurirlo in modo da rendere ben visibile il titolo e con un tasto dinamico per mettere in pausa e far ripartire il video
   ![immagine background-filter](./img/background-video.png)
+
+- ### tabs:
+  pagina che mostra un componente a schede (tabs). Cliccando su ogni scheda viene visualizzato un contenuto diverso, nascondendo gli altri.
+  ![immagine tabs](./img/tabs.png)
