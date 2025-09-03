@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(227, 250, 216);
+}
+
+header {
+  margin-top: 10rem;
+}
+
+main div {
+  width: 40%;
+}
+
+#btn-storia {
+  border-radius: 0px;
+  border-top-left-radius: 5px;
+}
+
+#btn-altitudine {
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+}
+
+.activ {
+  background-color: black;
+  color: white;
+}
