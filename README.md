@@ -36,5 +36,10 @@
   ![immagine background-filter](./img/background-video.png)
 
 - ### tabs:
+
   pagina che mostra un componente a schede (tabs). Cliccando su ogni scheda viene visualizzato un contenuto diverso, nascondendo gli altri.
+  ![immagine tabs](./img/tabs.png)
+
+- ### grocery list:
+  pagina in cui poter aggiungere, rimuovere o segnare come acquistati, elementi alla lista della spesa. Gli elementi aggiunti vengono salvati sul localstorage, perciò anche chiudendo la pagina e aggiornandola, gli elementi rimangono.
   ![immagine tabs](./img/tabs.png)
