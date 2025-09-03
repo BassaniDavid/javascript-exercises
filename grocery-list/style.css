@@ -1,0 +1,161 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #bfe4fb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+#grocery-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#new-item-input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#new-item-input:focus {
+  border-color: #4234db;
+}
+
+#grocery-form button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #4234db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+#grocery-form button:hover {
+  background-color: #2e2597;
+}
+
+#grocery-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grocery-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.grocery-item:hover {
+  background-color: #56bbff25;
+}
+
+.grocery-item.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 5px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.grocery-item:hover .delete-btn {
+  opacity: 1;
+}
+
+.reset-button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #ff1900; /* Rosso per indicare un'azione distruttiva */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #bd1401; /* Rosso più scuro al passaggio del mouse */
+}
+
+/* Animazione per l'aggiunta di un articolo (dissolvenza in entrata) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grocery-item.item-enter {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Animazione per la rimozione di un articolo (dissolvenza in uscita) */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.grocery-item.item-exit {
+  animation: fadeOut 0.3s ease-in forwards;
+}
+
+/*
+  Blocca temporaneamente i pulsanti e le checkbox mentre un'animazione
+  di cancellazione è in corso, per evitare errori.
+*/
+body.is-deleting .delete-btn,
+body.is-deleting .complete-checkbox {
+  pointer-events: none;
+}

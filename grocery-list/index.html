@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista della Spesa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista della Spesa</h1>
+      <form id="grocery-form">
+        <input
+          type="text"
+          id="new-item-input"
+          placeholder="Aggiungi un articolo..."
+        />
+        <button type="submit">Aggiungi</button>
+      </form>
+      <ul id="grocery-list">
+        <!-- articoli inseriti da JavaScript -->
+      </ul>
+      <button id="reset-button" class="reset-button">Svuota Lista</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
